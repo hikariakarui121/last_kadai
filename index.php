@@ -38,7 +38,7 @@ if ($status==false) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>TOP画面</title>
 </head>
 
@@ -57,7 +57,10 @@ if ($status==false) {
   </header>
 
     <div class="first">
-      <h1>山梨県の隠れ名所”猿橋”</h1>
+      <h1>”隠れ名所巡り”</h1>
+      <img src="./img/5.jpeg" alt=""> 
+      <img src="./img/11.jpeg" alt=""> 
+      <img src="./img/1.jpeg" alt=""> 
       <p>📍山梨県</P>
     </div>
 
@@ -83,8 +86,7 @@ if ($status==false) {
     </ul>
     <small>&copy; 2022 tabi*旅ツーサイト.</small>
   </footer>
-
   
+  <script> </script>
 </body>
 </html>
-    
