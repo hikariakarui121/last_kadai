@@ -1,11 +1,24 @@
 
 /* 初期設定 */
 body {
-  width: 1100px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #333;
   font-size: 14px;
+}
+
+a {
+  color: #333;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,38 +26,36 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
-/* セクションに対して */
-section{
-  height: 300px;
+p {
+  margin:0;
 }
 
+img {
+  vertical-align: bottom;
+}
 
-/* navに対する設定 */
-/* ヘッダー の設定*/
+/* ヘッダー */
 header {
-  width: 1100px;
+  width: 984px;
+  margin: 0 auto;
 }
 header h1 {
   margin: 5px 0 10px;
   
 }
 
-#navi {
+#navi ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: inline-block;
     font-size:0;
-    text-align: center;
-  }
-  
-  ul{
-  padding: 0;
 }
 
 #navi ul li{
     display:inline-block;
-    width: 220px;
+    width: 196px;
+    text-align: center;
     font-size:15px;
     font-weight: bold;
 }
@@ -58,32 +69,27 @@ header h1 {
   /* transition: background-color .2s linear; */
 }
 
- .top p {
-  padding:0;
-  margin: 0 ;
-  text-align: center;
-  height: 400px;
-  background-color: rgb(236, 232, 232);
-}
-
-p img{
-  display: inline-block;
-  height: 400px;
-  width:auto;
-  
+#navi ul li a:hover {
+  opacity:0.8;
+  cursor: pointer;
 }
 
 /* メイン */
-
-
+#main{
+  width: 984px;
+  margin: 0 auto 25px;
+  
+}
 .top h2{
   margin:0;
   background-color:rgba(48, 46, 46, 0.938);
   color:white;
+
 }
 
-.top div{
-  margin: auto;
+.top img {
+  width: 984px;
+  height: auto;
 }
 
 section{
