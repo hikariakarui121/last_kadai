@@ -59,6 +59,7 @@ header p{
 
 /* 投稿するボタン */
 header p a{
+  display: inline-block;
   border-radius: 10px;
   background-color: chocolate;
   font-size: 18px;
@@ -66,12 +67,16 @@ header p a{
   color:white;
   padding:10px;
   margin-right:20px;
+  border:1px solid rgb(149, 89, 45);
+  box-shadow: 2px 2px 0 0 rgb(149, 89, 45);
 
 }
 
 header p a:hover{
   background-color:  chocolate;
-  opacity:0.7;
+  transform: translate(2px, 2px);
+  opacity:0.8;
+  box-shadow:none;
 }
 
 /* ここは画像部分のCSS */
