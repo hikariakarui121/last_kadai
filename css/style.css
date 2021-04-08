@@ -22,8 +22,116 @@ header h1{
   top:20px;
   left:25px;
   text-align: right;
+}
+
+
+/* contentsの中身のCSS */
+#contents{
+  width:970px;
+  height:300px;
+  background-color: #e9cea4;
+  z-index: 2;
+  margin: 0 auto 50px;
+  border-radius: 10px;
+}
+
+
+.title__contents{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 
 }
+
+
+.title__image> img{
+  /* opacity: 0; */
+  display: inline-block;
+  width:300px;
+  height: auto;
+  margin-left: 70px;
+  vertical-align: bottom;
+}
+
+.title__image{
+  position: relative;
+}
+
+.title__image::after{
+  position: absolute;
+  content:'';
+  top:0;
+  bottom: 0;
+  left: 70px;;
+  right: 0;
+  z-index:2;
+  background-color:#e9cea4;
+  animation: kf-cover 1s linear ;
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes kf-cover {
+  0%{
+    left:70px;
+    right:100%;
+  }
+  50%{
+    left:70px;
+    right:0;
+  }
+
+  100%{
+    left:100%;
+    right:0;
+  }
+}
+
+/* inviewがついた時の処理
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  50.1%{
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+
+.title__text{
+  margin-right: 70px;
+}
+
+#title__btn{
+  text-align: center;
+  margin-top:35px;
+}
+#title__btn>a{
+  color:white;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 4px 8px; 
+  display: inline-block;
+}
+
+#title__btn>a:hover{
+  opacity: 0.7;
+  transform:translate(0,2px)
+}
+
+
+
+
 
 /* ログイン画面 */
 #login{
@@ -84,7 +192,7 @@ div.first{
   width:1000px;
   height: 370px;
   color:white;
-  margin:35px auto;
+  margin:35px auto 50px;
   text-align: center;
   position: relative;
 }
@@ -147,12 +255,13 @@ div.top p{
   display: inline-block;
   font-size:22px;
   font-weight: bold;
-  transform: translateX(-12px);
+  /* transform: translateX(-5px); */
 }
 
 div.content{
   text-align: center;
   line-height: 1.75;
+  margin-bottom: 70px;
   
 }
 
