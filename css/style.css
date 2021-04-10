@@ -33,7 +33,15 @@ header h1{
   z-index: 2;
   margin: 0 auto 50px;
   border-radius: 10px;
+  /* opacity:0;
+  transform:translateY(20px);
+  transition: opacity 2s, transform .3s; */
 }
+
+/* #contents.appear{
+  opacity:1;
+  transform: translateY(0);
+} */
 
 
 .title__contents{
@@ -42,24 +50,29 @@ header h1{
   height: 100%;
   justify-content: space-between;
   align-items: center;
-
+  overflow: hidden;
 }
 
 
 .title__image> img{
-  /* opacity: 0; */
   display: inline-block;
   width:300px;
   height: auto;
   margin-left: 70px;
   vertical-align: bottom;
 }
-
 .title__image{
   position: relative;
+  opacity: 0;
+  
 }
+.title__image.appear{
+  animation:kf-show 0.5s linear;
+  opacity: 1;
 
-.title__image::after{
+  
+}
+.title__image.appear::after{
   position: absolute;
   content:'';
   top:0;
@@ -68,7 +81,7 @@ header h1{
   right: 0;
   z-index:2;
   background-color:#e9cea4;
-  animation: kf-cover 1s linear ;
+  animation: kf-cover 0.5s linear ;
   animation-fill-mode: forwards;
 }
  
@@ -88,24 +101,21 @@ header h1{
   }
 }
 
-/* inviewがついた時の処理
-@keyframes show {
+@keyframes kf-show {
   0%{
-    opacity: 0;
+   opacity: 0;
   }
   50%{
     opacity: 0;
   }
   50.1%{
     opacity: 1;
-    transform: scale(1.5);
   }
   100%{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.1) ;
   }
-} */
-
+}
 
 .title__text{
   margin-right: 70px;
